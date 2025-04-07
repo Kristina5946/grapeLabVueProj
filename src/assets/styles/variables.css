@@ -1,0 +1,11 @@
+:root {
+  --card-bg: #ffffff;
+  --purple: #5c4080;
+  --purple-border: #58427C;
+  --page-bg: #f5f2f6;
+  --text-dark: #3c2a53;
+  --text-gray: #555;
+  --text-light-gray: #777;
+  --teal: #77C3DD;
+  --process-gradient: linear-gradient(135deg, var(--purple) 0%, var(--teal) 100%);
+}

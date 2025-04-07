@@ -1,0 +1,70 @@
+
+@import './variables.css';
+
+.tech-icons-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: var(--purple);
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.tech-icon {
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) saturate(100%) 
+          invert(25%) 
+          sepia(16%) 
+          saturate(2000%) 
+          hue-rotate(230deg) 
+          brightness(90%) 
+          contrast(90%);
+  transition: all 0.3s ease;
+}
+
+.tech-icon.hovered {
+  transform: scale(1.2) rotate(10deg);
+  filter: brightness(0) saturate(100%) 
+          invert(25%) 
+          sepia(16%) 
+          saturate(3000%) 
+          hue-rotate(230deg) 
+          brightness(100%) 
+          contrast(90%);
+}
+
+@media (max-width: 1024px) {
+  .icons-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .icons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
